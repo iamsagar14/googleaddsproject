@@ -1,7 +1,9 @@
 // 📦 Package imports:
 // import 'package:flutterfireabsetest/firebase/dynamic_link_helper.dart';
 import 'package:flutterfireabsetest/firebase/push_notification_helper.dart';
+import 'package:flutterfireabsetest/firebase/remote_config_helper.dart';
 import 'package:flutterfireabsetest/services/manager/google_signin_manager.dart';
+import 'package:flutterfireabsetest/services/manager/storage_manager.dart';
 // import 'package:flutterfireabsetest/firebase/remote_config_helper.dart';
 import 'package:get_it/get_it.dart';
 
@@ -33,9 +35,20 @@ void initLocator() {
     );
   }
 
+  if (!locator.isRegistered<RemoteConfigHelper>()) {
+    locator.registerLazySingleton(
+      () => RemoteConfigHelper(),
+    );
+  }
+
   if (!locator.isRegistered<GoogleSigninManager>()) {
     locator.registerLazySingleton(
       () => GoogleSigninManager(googleSignIn: locator()),
+    );
+  }
+  if (!locator.isRegistered<StorageManager>()) {
+    locator.registerLazySingleton(
+      () => StorageManager(),
     );
   }
 }

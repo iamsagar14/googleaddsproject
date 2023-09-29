@@ -4,6 +4,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 class RewardedadsController extends GetxController {
   //TODO: Implement RewardedadsController
   RewardedAd? rewardedAd;
+  
   void LoadRewardedAd() {
     RewardedAd.load(
       adUnitId: 'ca-app-pub-3940256099942544/5224354917',

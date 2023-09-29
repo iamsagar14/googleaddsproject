@@ -10,6 +10,7 @@ abstract class Routes {
   static const PROFILE = _Paths.PROFILE;
   static const SIGNINWITHGOOGLE = _Paths.SIGNINWITHGOOGLE;
   static const REWARDEDADS = _Paths.REWARDEDADS;
+  static const ONBOARD = _Paths.ONBOARD;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const PROFILE = '/profile';
   static const SIGNINWITHGOOGLE = '/signinwithgoogle';
   static const REWARDEDADS = '/rewardedads';
+  static const ONBOARD = '/onboard';
 }

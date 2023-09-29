@@ -1,10 +1,9 @@
 // 🐦 Flutter imports:
 
 import 'package:flutter/material.dart';
-import 'package:flutterfireabsetest/app/modules/notification/controllers/notification_controller.dart';
+
 import 'package:flutterfireabsetest/app/modules/notification/views/notification_view.dart';
 import 'package:flutterfireabsetest/app/modules/signinwithgoogle/views/signinwithgoogle_view.dart';
-import 'package:flutterfireabsetest/app/routes/app_pages.dart';
 
 // 📦 Package imports:
 import 'package:get/get.dart';

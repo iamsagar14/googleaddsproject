@@ -23,12 +23,17 @@ dependencies:
   intl: ^0.18.1
   firebase_auth: ^4.10.0
   google_mobile_ads: ^3.0.0
+  jwt_decoder: ^2.0.1
+  cached_network_image: ^3.2.3
+  dots_indicator: ^3.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   import_sorter: ^4.6.0
   assets_gen: ^1.4.1
+  flutter_native_splash: ^2.3.2
+
 
 flutter:
   uses-material-design: true

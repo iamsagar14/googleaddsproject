@@ -23,6 +23,7 @@ void main() async {
   var devices = ['A23D74D3BD2A64DD22CBB98170365828'];
   WidgetsFlutterBinding.ensureInitialized();
   di.initLocator();
+
   await MobileAds.instance.initialize();
   RequestConfiguration requestConfiguration =
       RequestConfiguration(testDeviceIds: devices);

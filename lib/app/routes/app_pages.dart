@@ -4,10 +4,12 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/notification/bindings/notification_binding.dart';
 import '../modules/notification/views/notification_view.dart';
+import '../modules/onboard/bindings/onboard_binding.dart';
+import '../modules/onboard/views/onboard_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
-import '../modules/profile/bindings/profile_binding.dart';
+
 import '../modules/profile/views/profile_view.dart';
-import '../modules/profile/views/profile_view.dart';
+
 import '../modules/rewardedads/bindings/rewardedads_binding.dart';
 import '../modules/rewardedads/views/rewardedads_view.dart';
 import '../modules/signinwithgoogle/bindings/signinwithgoogle_binding.dart';
@@ -23,7 +25,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.ONBOARD;
 
   static final routes = [
     GetPage(
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.REWARDEDADS,
       page: () => const RewardedadsView(),
       binding: RewardedadsBinding(),
+    ),
+    GetPage(
+      name: _Paths.ONBOARD,
+      page: () => const OnboardView(),
+      binding: OnboardBinding(),
     ),
   ];
 }
